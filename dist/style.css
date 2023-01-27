@@ -1,0 +1,448 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 150px;
+    background-color: #030027;
+    text-align: center;
+}
+
+.page-name {
+    color: white;
+}
+
+.body-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+nav {
+    height: 100vh;
+    width: 300px;
+    background-color: #246EB9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-title {
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.project-list-container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: fit-content;
+    background-color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.new-project {
+    padding: 1rem;
+}
+
+html {
+    margin: 0;
+}
+
+.project-item {
+    width: 100%;
+    background-color: #00A092;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+.new-project-item {
+    width: 100%;
+    background-color: cadetblue;
+}
+
+.todo-input-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: fit-content;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.todo-item-input {
+    height: 1.15rem;
+    font-size: 1.15rem;
+}
+
+.btn-input {
+    width: 50px;
+}
+
+.priority-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1rem;
+}
+
+.priority-label {
+    text-align: center;
+}
+
+.todo-item-heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.todo-list-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-card-container {
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 1.15rem;
+    padding: 1rem;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.todo-card-selected {
+    height: 160px;
+}
+
+.todo-card-container:hover {
+    border: 3px solid lightskyblue;
+    cursor: pointer;
+}
+
+.todo-card-title, .todo-card-duedate, .todo-card-priority {
+    padding: 0rem;
+}
+
+.main {
+    width: 1200px;
+}
+
+.modal, .modal-delete {
+  display: flex; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /*background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.project-input-content {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 325px;
+    background-color: white;
+    padding: 0rem;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.modal-btn-container {
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.modal-heading {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #246EB9;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.modal-btn {
+    font-size: 1.25rem;
+}
+
+#project-name-input {
+    width: 250px;
+}
+
+#project-date-input {
+    margin-top: .5rem;
+    width: 250px;
+}
+
+#project-date-label {
+    margin-top: 1rem;
+}
+
+.modal-input-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    padding: 0rem;
+    box-sizing: border-box;
+    align-content: space-around;
+}
+
+.modal-label {
+    font-size: 1.15rem;
+}
+
+.todo-modal-input-content {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto;
+    row-gap: 1rem;
+}
+
+#todo-date-input {
+    width: 150px;
+}
+
+#todo-description-input {
+    
+}
+
+.open-todo-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 10px solid whitesmoke;
+    font-size: 1.25rem;
+    background-color: #246EB9;
+}
+
+.new-todo-hidden {
+    display: none;
+}
+
+.open-todo-input:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.checkbox {
+    width:32px;
+}
+
+.icon-container {
+    width: 32px;
+    height: 32px;
+}
+
+.item-icon {
+    display: none;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    color: red;
+}
+
+.item-icon:hover {
+    cursor: pointer;
+}
+
+.delete-icon:hover {
+    cursor: pointer;
+}
+
+.todo-card-title {
+    font-weight: bold;
+}
+
+.todo-label-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: normal;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: end;
+    width: 100px
+}
+
+.priority-color {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 20rem;
+}
+
+.project-card-container, .project-card-container-selected {
+    padding: .75rem;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+.project-card-container-selected {
+    background-color: #030027;
+    color: white;
+}
+
+.project-card-container:hover {
+    background-color: #246EB9;
+    cursor: pointer;
+}
+
+.btn-new-project {
+    width: 100%;
+    font-size: 1.15rem;
+    padding: .5rem;
+}
+
+.btn-new-project:hover {
+    cursor: pointer;
+    background-color: darkgrey;
+}
+
+.selected-project {
+    background-color: #00A092;
+}
+
+.prompt-delete-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 250px;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: white;
+    font-size: 1.15rem;
+}
+
+.prompt-delete-top {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    align-items: center;
+}
+
+.prompt-delete-bottom {
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-evenly;
+    height: 50%;
+}
+
+.btn-prompt-delete {
+    background-color:#030027;
+    padding: 1rem;
+    width: 6rem;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.btn-prompt-delete:hover {
+    cursor: pointer;
+    border: 4px solid #246EB9;
+}
+
+.checkbox {
+    width: 3rem;
+}
+
+.error-message {
+    color: red;
+    padding: 1rem;
+}
+
+.checkbox_unchecked {
+    width: 32px;
+    height: 32px;
+    background-image: url("./img/check_box_blank.svg");
+    background-size: 32px;
+}
+
+.checkbox_checked {
+    width: 32px;
+    height: 32px;
+    background-image: url("./img/check_box_checked.svg");
+    background-size: 32px;
+}
+
+.todo-card-description {
+    max-width: 320px;
+    max-height: 100px;
+    height: auto;
+    border: 1px solid black;
+    padding: .5rem;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-heading {
+    text-align: center;
+    font-weight: bold;
+}
+
+.tooltip-edit::after {
+    content: "HUH";
+    position: absolute;
+    bottom: 100%;
+    
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+#edit-icon:hover .tooltip-edit {
+    visibility: visible;
+}
+
+.tooltip-edit {
+    visibility: hidden;
+    z-index: 1;
+    width: 120px;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
